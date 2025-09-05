@@ -169,7 +169,7 @@
         <div class="col-lg-6">
           <div class="plan-text">
             <h6>Why Choose Us</h6>
-            <h2>The Most Creative Agency</h2>
+            <h2>Shaping Dreams Into Reality</h2>
             <p>
               We are creative for flawless execution, WedCo takes pride in being the most preferred event management companies 
               all over the world since,1995!
@@ -189,7 +189,37 @@
       </div>
     </div>
   </section>
-  <section class="testimonial-section">
+
+    <section class="zero-section">
+    <div class="zero-overlay"></div>
+    <div class="container zero-content">
+      <h1>We Plan Every Detail Of Your Special Day</h1>
+      <div class="contact-box">
+        <!-- WhatsApp -->
+        <div class="contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <strong>What’s App Chat</strong><br>
+            <span>(0095) 123-456-789</span>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Skype -->
+        <div class="contact-item">
+          <i class="fab fa-skype"></i>
+          <div>
+            <strong>Skype Chat</strong><br>
+            <span>(0095) 123-456-789</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section class="testimonial-section">
     <div class="container">
       <h6>Beautiful Client</h6>
       <h2>What Our Clients Say?</h2>
@@ -269,35 +299,6 @@
       </div>
     </div>
   </section>
-
-    <section class="zero-section">
-    <div class="zero-overlay"></div>
-    <div class="container zero-content">
-      <h1>We Plan Every Detail Of Your Special Day</h1>
-      <div class="contact-box">
-        <!-- WhatsApp -->
-        <div class="contact-item">
-          <i class="fab fa-whatsapp"></i>
-          <div>
-            <strong>What’s App Chat</strong><br>
-            <span>(0095) 123-456-789</span>
-          </div>
-        </div>
-
-        <!-- Divider -->
-        <div class="divider"></div>
-
-        <!-- Skype -->
-        <div class="contact-item">
-          <i class="fab fa-skype"></i>
-          <div>
-            <strong>Skype Chat</strong><br>
-            <span>(0095) 123-456-789</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <!-- footer -->
     <footer>
     <div class="container">
@@ -338,11 +339,10 @@
         <!-- Gallery -->
         <div class="col-lg-3 col-md-6 mb-4">
           <h5>Gallery</h5>
-          <div class="row gallery g-2">
-            <div class="col-6"><img src="https://via.placeholder.com/150" alt="gallery"></div>
-            <div class="col-6"><img src="https://via.placeholder.com/150" alt="gallery"></div>
-            <div class="col-6"><img src="https://via.placeholder.com/150" alt="gallery"></div>
-            <div class="col-6"><img src="https://via.placeholder.com/150" alt="gallery"></div>
+          <div class="row gallery-slider g-2">
+             <img id="footer-slider" 
+             src="https://cdn.shopify.com/s/files/1/0714/9836/7168/files/DBEsecond.jpg?v=1756898736" 
+             alt="Gallery">
           </div>
         </div>
       </div>
@@ -373,6 +373,30 @@
       navbar.classList.toggle("scrolled", window.scrollY > 50);
     });
   </script>
+  <!-- Image Slider Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const sliderImages = [
+    "https://cdn.shopify.com/s/files/1/0714/9836/7168/files/North_Indian_Wedding_Mandap_1.jpg?v=1756898736",
+    "https://cdn.shopify.com/s/files/1/0714/9836/7168/files/DBEsecond.jpg?v=1756898736",
+    "https://cdn.shopify.com/s/files/1/0714/9836/7168/files/North_Indian_Wedding_Mandap_1.jpg?v=1756898736",
+    "https://cdn.shopify.com/s/files/1/0714/9836/7168/files/DBEsecond.jpg?v=1756898736"
+  ];
+
+  let currentIndex = 0;
+  const slider = document.getElementById("footer-slider");
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % sliderImages.length;
+    slider.style.opacity = 0;
+
+    setTimeout(() => {
+      slider.src = sliderImages[currentIndex];
+      slider.style.opacity = 1;
+    }, 1000);
+  }, 2000);
+});
+</script>
 
 </body>
 
