@@ -3,6 +3,9 @@
       padding: 0;
       overflow-x: hidden; /* Prevent horizontal scroll */
     }
+    .eventpic-2 img{
+      display: none;
+    }
 
     .eventpic {
       position: relative;
