@@ -12,7 +12,7 @@
     .eventpic {
       position: relative;
       width: 99vw;
-      height: 22vw;
+      height: 35vw;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -60,6 +60,13 @@
     }
 
     .btn-custom {
+      background: #d63384;
+      color: #fff;
+      border-radius: 10px;
+      padding: 12px 25px;
+      transition: 0.3s;
+    }
+    .Send{
       background: #d63384;
       color: #fff;
       border-radius: 10px;

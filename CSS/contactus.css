@@ -12,7 +12,34 @@ body{
     background: rgb(0, 0, 0);
 background: linear-gradient(90deg, rgb(0, 0, 0) 26%, rgba(1,1,2,1) 78%);
 }
+    .eventpic {
+      position: relative;
+      width: 100vw;
+      height: 22vw;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
+    .eventpic img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .eventpic h3 {
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      z-index: 2;
+      margin: 0;
+    }
  form{
     background-color:#000000 ;
   }
@@ -36,7 +63,9 @@ background: linear-gradient(90deg, rgb(0, 0, 0) 26%, rgba(1,1,2,1) 78%);
     border-radius: 3px;
     box-sizing: border-box;
   }
-  
+  .btn-custom{
+    background-color: ;
+  }
   textarea {
     width: 100%;
     padding: 10px;
