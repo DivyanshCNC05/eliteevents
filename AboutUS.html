@@ -57,8 +57,8 @@
   </section>
  <div class="maroon">
      <section class="choose-section container text-center">
-    <h6>Our History</h6>
-    <h2>Why Choose Inventino Events & Entertainment!</h2>
+    <h6 class="text-center">Our History</h6>
+    <h2>Why Choose Elite Events</h2>
     <p>
       Choosing a wedding planner like Inventino Events can significantly enhance the wedding planning experience, ensuring a seamless, stressfree, and memorable event. Here are some reasons why Inventino Events might be a great choice as a wedding planner:
     </p>
@@ -260,11 +260,10 @@
         <!-- Gallery -->
         <div class="col-lg-3 col-md-6 mb-4">
           <h5>Gallery</h5>
-          <div class="row gallery g-2">
-            <div class="col-6"><img src="https://via.placeholder.com/150" alt="gallery"></div>
-            <div class="col-6"><img src="https://via.placeholder.com/150" alt="gallery"></div>
-            <div class="col-6"><img src="https://via.placeholder.com/150" alt="gallery"></div>
-            <div class="col-6"><img src="https://via.placeholder.com/150" alt="gallery"></div>
+          <div class="row gallery-slider g-2">
+             <img id="footer-slider" 
+             src="https://cdn.shopify.com/s/files/1/0714/9836/7168/files/DBEsecond.jpg?v=1756898736" 
+             alt="Gallery">
           </div>
         </div>
       </div>
@@ -296,6 +295,30 @@
       navbar.classList.toggle("scrolled", window.scrollY > 50);
     });
   </script>
+    <!-- Image Slider Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const sliderImages = [
+    "https://cdn.shopify.com/s/files/1/0714/9836/7168/files/North_Indian_Wedding_Mandap_1.jpg?v=1756898736",
+    "https://cdn.shopify.com/s/files/1/0714/9836/7168/files/DBEsecond.jpg?v=1756898736",
+    "https://cdn.shopify.com/s/files/1/0714/9836/7168/files/North_Indian_Wedding_Mandap_1.jpg?v=1756898736",
+    "https://cdn.shopify.com/s/files/1/0714/9836/7168/files/DBEsecond.jpg?v=1756898736"
+  ];
+
+  let currentIndex = 0;
+  const slider = document.getElementById("footer-slider");
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % sliderImages.length;
+    slider.style.opacity = 0;
+
+    setTimeout(() => {
+      slider.src = sliderImages[currentIndex];
+      slider.style.opacity = 1;
+    }, 1000);
+  }, 2000);
+});
+</script>
 
 </body>
 
