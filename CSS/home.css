@@ -490,8 +490,8 @@ button {
 }
 
 .button-item .button-bg {
-  border-color: rgb(174, 44, 11);
-  background-color: rgb(228, 127, 10);
+  border-color: rgba(255, 208, 116);
+  background-color: rgba(255, 208, 116);
 }
 
 .button-inner,
@@ -551,11 +551,11 @@ button {
 }
 
 .button-bg-layer.-purple {
-  background-color: rgb(190, 46, 10);
+  background-color: rgba(163, 116, 255);
 }
 
 .button-bg-layer.-turquoise {
-  background-color: rgb(5, 190, 76);
+  background-color: rgba(23, 241, 209);
 }
 
 .button-bg-layer.-yellow {
